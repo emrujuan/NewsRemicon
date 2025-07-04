@@ -14,5 +14,14 @@ export default defineConfig({
         port: 3000,
         open: true,
     },
-    base: '/',
+    base: '/NewsRemicon/',
+    build: {
+    assetsDir: 'assets', 
+    rollupOptions: {
+      external: [
+        '/assets/js/jquery-*', 
+        '/assets/plugins/revolution/**'
+      ]
+    }
+  }
 });
