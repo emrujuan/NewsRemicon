@@ -3661,6 +3661,13 @@ ol.list-num-count.list-outline-none>li:before {
   }
 }
 
+@media (max-width: 500px) {
+	.tp-parallax-wrap {
+    left: 20px !important; 
+    transform: translateX(0) !important;
+}
+}
+
 
 .mt-icon-box-wraper .mt-tilte {
 	margin-top: 0;
