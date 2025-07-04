@@ -2,10 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import img1 from "../../images/main-slider/slider1/slide1.jpg";
 import img2 from "../../images/main-slider/slider1/slide2.jpg";
-import img3 from "../../images/main-slider/slider1/slide3.jpg";
 import Bugd from "../../../Data/bugd.jpg";
 import Slide2 from "../../../Data/DSC_0044.jpg";
-import Slide3 from "../../../Data/slide3.jpg"
 
 class Slider extends React.Component {
   componentDidMount() {
@@ -45,22 +43,22 @@ class Slider extends React.Component {
           className="rev_slider_wrapper fullscreen-container "
           data-alias="goodnews-header"
           data-source="gallery"
-          style={{ 
-            background: "#eeeeee", 
-            padding: '0px 0px', 
-            width: '100%', 
-            maxWidth: '100%', 
+          style={{
+            background: "#eeeeee",
+            padding: '0px 0px',
+            width: '100%',
+            maxWidth: '100%',
             margin: '0 auto'
           }}
         >
           <div
             id="welcome"
             className="rev_slider fullscreenbanner"
-            style={{ 
-              display: "block",  
-              width: '100%',  
-              height: '100vh',  
-              maxWidth: '100%' 
+            style={{
+              display: "block",
+              width: '100%',
+              height: '100vh',
+              maxWidth: '100%'
             }}
             data-version="5.4.3.1"
           >
@@ -104,7 +102,7 @@ class Slider extends React.Component {
                   data-bgparallax={4}
                   className="rev-slider-slide-bg"
                   style={{
-                    objectFit: 'contain',  
+                    objectFit: 'contain',
                     width: '70%',
                     height: '70',
                     minHeight: '500px',
@@ -146,15 +144,15 @@ class Slider extends React.Component {
                 ></div>
                 {/* LAYER NR. 4 [ for title ] */}
                 <div
-                  className="tp-caption   tp-resizeme"
+                  className="tp-caption tp-resizeme"
                   id="slide-901-layer-2"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
                   data-y="['top','top','top','top']"
                   data-voffset="['240','240','180','200']"
-                  data-fontsize="['72','72','62','52']"
-                  data-lineheight="['82','82','72','62']"
-                  data-width="['700','700','700','500']"
+                  data-fontsize="['72','72','62','36']"
+                  data-lineheight="['82','82','72','42']"
+                  data-width="['700','700','700','320']"
                   data-height="['none','none','none','none']"
                   data-whitespace="['normal','normal','normal','normal']"
                   data-type="text"
@@ -173,74 +171,52 @@ class Slider extends React.Component {
                     borderWidth: 0,
                     fontFamily: '"Poppins", sans-serif',
                     textTransform: "uppercase",
+                    wordBreak: "break-word"
                   }}
                 >
-                  <div>Ньюс Ремикон ХХК </div>
+                  <div>Ньюс Ремикон ХХК</div>
                 </div>
+
                 {/* LAYER NR. 5 [ for block] */}
                 <div
-                  className="tp-caption rev-btn  tp-resizeme slider-block"
-                  id="slide-901-layer-3"
-                  data-x="['left','left','left','left']"
-                  data-hoffset="['0','80','80','60']"
-                  data-y="['middle','middle','middle','middle']"
-                  data-voffset="['0','0','0','0']"
-                  data-width="none"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-type="button"
-                  data-responsive_offset="on"
-                  data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},
-                             {"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                  data-textalign="['left','left','left','left']"
-                  data-paddingtop="[250,250,250,200]"
-                  data-paddingright="[150,150,150,150]"
-                  data-paddingbottom="[250,250,250,200]"
-                  data-paddingleft="[150,150,150,150]"
-                  style={{ zIndex: 8, borderColor: '#0f5a9d' }}
-                >
-                  <div
-                    className="rs-wave"
-                    data-speed={1}
-                    data-angle={0}
-                    data-radius="2px"
-                  />
-                </div>
-                {/* LAYER NR. 5 [ for block] */}
-                <div
-                  className="tp-caption tp-resizeme"
+                  className="tp-caption tp-resizeme custom-caption"
                   id="slide-901-layer-4"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
                   data-y="['top','top','top','top']"
                   data-voffset="['410','410','350','340']"
-                  data-fontsize="['20','20','30','30']"
-                  data-lineheight="['28','28','48','38']"
-                  data-width="['600','600','700','600']"
+                  data-fontsize="['36','36','28','20']"
+                  data-lineheight="['46','46','36','30']"
+                  data-width="['700','700','650','320']"
                   data-height="['none','none','none','none']"
                   data-whitespace="['normal','normal','normal','normal']"
                   data-type="text"
                   data-responsive_offset="on"
                   data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                   data-textalign="['left','left','left','left']"
-                  data-paddingtop="[5,5,5,5]"
-                  data-paddingright="[0,0,0,0]"
-                  data-paddingbottom="[0,0,0,0]"
-                  data-paddingleft="[0,0,0,0]"
+                  data-paddingtop="[10,10,10,10]"
+                  data-paddingright="[16,16,16,16]"
+                  data-paddingbottom="[10,10,10,10]"
+                  data-paddingleft="[16,16,16,16]"
+                  data-allowfullscreen="true"
                   style={{
                     zIndex: 13,
                     whiteSpace: "normal",
                     fontWeight: 500,
-                    color: "#111",
-                    borderWidth: 0,
+                    color: "#fff",
                     fontFamily: '"Poppins", sans-serif',
+                    background: "rgba(15, 90, 157, 0.85)",
+                    padding: "10px 16px",
+                    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.3)",
+                    backdropFilter: "blur(4px)",
                   }}
                 >
                   Бид эх орныхоо дөрвөн зүгт хөгжлийг бүтээлцэнэ.
                 </div>
+
                 {/* LAYER NR. 6 [ for see all service botton ] */}
                 <div
-                  className="tp-caption tp-resizeme"
+                  className="tp-caption tp-resizeme custom-caption"
                   id="slide-901-layer-5"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
@@ -261,7 +237,7 @@ class Slider extends React.Component {
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
                   data-paddingleft="[0,0,0,0]"
-                  style={{ zIndex: 100, textTransform: "uppercase" }}
+                  style={{ zIndex: 100, textTransform: "uppercase", marginTop: "40px" }}
                 >
                   <NavLink
                     to="/about"
@@ -345,15 +321,15 @@ class Slider extends React.Component {
                 ></div>
                 {/* LAYER NR. 4 [ for title ] */}
                 <div
-                  className="tp-caption   tp-resizeme"
-                  id="slide-902-layer-2"
+                  className="tp-caption tp-resizeme"
+                  id="slide-901-layer-2"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
                   data-y="['top','top','top','top']"
                   data-voffset="['240','240','180','200']"
-                  data-fontsize="['72','72','62','52']"
-                  data-lineheight="['82','82','72','62']"
-                  data-width="['700','700','700','500']"
+                  data-fontsize="['72','72','62','36']"
+                  data-lineheight="['82','82','72','42']"
+                  data-width="['700','700','700','320']"
                   data-height="['none','none','none','none']"
                   data-whitespace="['normal','normal','normal','normal']"
                   data-type="text"
@@ -372,75 +348,53 @@ class Slider extends React.Component {
                     borderWidth: 0,
                     fontFamily: '"Poppins", sans-serif',
                     textTransform: "uppercase",
+                    wordBreak: "break-word"
                   }}
                 >
-                  <div>NEWS REMICON XXK</div>
+                  <div>Ньюс Ремикон ХХК</div>
                 </div>
+
                 {/* LAYER NR. 5 [ for block] */}
                 <div
-                  className="tp-caption rev-btn  tp-resizeme slider-block"
-                  id="slide-902-layer-3"
-                  data-x="['left','left','left','left']"
-                  data-hoffset="['0','80','80','60']"
-                  data-y="['middle','middle','middle','middle']"
-                  data-voffset="['0','0','0','0']"
-                  data-width="none"
-                  data-height="none"
-                  data-whitespace="nowrap"
-                  data-type="button"
-                  data-responsive_offset="on"
-                  data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},
-                             {"delay":"wait","speed":500,"to":"y:[-100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power1.easeIn"}]'
-                  data-textalign="['left','left','left','left']"
-                  data-paddingtop="[250,250,250,200]"
-                  data-paddingright="[150,150,150,150]"
-                  data-paddingbottom="[250,250,250,200]"
-                  data-paddingleft="[150,150,150,150]"
-                  style={{ zIndex: 8, borderColor: '#0f5a9d'}}
-                >
-                  <div
-                    className="rs-wave"
-                    data-speed={1}
-                    data-angle={0}
-                    data-radius="2px"
-                  />
-                </div>
-                {/* LAYER NR. 5 [ for block] */}
-                <div
-                  className="tp-caption   tp-resizeme"
-                  id="slide-902-layer-4"
+                  className="tp-caption tp-resizeme custom-caption"
+                  id="slide-901-layer-4"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
                   data-y="['top','top','top','top']"
                   data-voffset="['410','410','350','340']"
-                  data-fontsize="['20','20','30','30']"
-                  data-lineheight="['28','28','48','38']"
-                  data-width="['600','600','700','600']"
+                  data-fontsize="['36','36','28','20']"
+                  data-lineheight="['46','46','36','30']"
+                  data-width="['700','700','650','320']"
                   data-height="['none','none','none','none']"
                   data-whitespace="['normal','normal','normal','normal']"
                   data-type="text"
                   data-responsive_offset="on"
                   data-frames='[{"delay":"+790","speed":1500,"sfxcolor":"#fff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                   data-textalign="['left','left','left','left']"
-                  data-paddingtop="[5,5,5,5]"
-                  data-paddingright="[0,0,0,0]"
-                  data-paddingbottom="[0,0,0,0]"
-                  data-paddingleft="[0,0,0,0]"
+                  data-paddingtop="[10,10,10,10]"
+                  data-paddingright="[16,16,16,16]"
+                  data-paddingbottom="[10,10,10,10]"
+                  data-paddingleft="[16,16,16,16]"
+                  data-allowfullscreen="true"
                   style={{
                     zIndex: 13,
                     whiteSpace: "normal",
                     fontWeight: 500,
-                    color: "#111",
-                    borderWidth: 0,
+                    color: "#fff",
                     fontFamily: '"Poppins", sans-serif',
+                    background: "rgba(15, 90, 157, 0.85)",
+                    padding: "10px 16px",
+                    boxShadow: "0 6px 18px rgba(0, 0, 0, 0.3)",
+                    backdropFilter: "blur(4px)",
                   }}
                 >
                   Бид эх орныхоо дөрвөн зүгт хөгжлийг бүтээлцэнэ.
                 </div>
+
                 {/* LAYER NR. 6 [ for see all service botton ] */}
                 <div
-                  className="tp-caption tp-resizeme"
-                  id="slide-902-layer-5"
+                  className="tp-caption tp-resizeme custom-caption"
+                  id="slide-901-layer-5"
                   data-x="['left','left','left','left']"
                   data-hoffset="['50','130','130','130']"
                   data-y="['top','top','top','top']"
@@ -460,13 +414,13 @@ class Slider extends React.Component {
                   data-paddingright="[0,0,0,0]"
                   data-paddingbottom="[0,0,0,0]"
                   data-paddingleft="[0,0,0,0]"
-                  style={{ zIndex: 100, textTransform: "uppercase" }}
+                  style={{ zIndex: 100, textTransform: "uppercase", marginTop: "40px" }}
                 >
                   <NavLink
                     to="/about"
                     className="site-button-secondry btn-effect"
                   >
-                    Бидний тухай
+                    бидний тухай
                   </NavLink>
                 </div>
               </li>

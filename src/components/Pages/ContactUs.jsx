@@ -12,8 +12,8 @@ class ContactUs extends React.Component {
     render() {
         const defaultProps = {
             center: {
-              lat: 34.073280,
-              lng: -118.251410
+                lat: 34.073280,
+                lng: -118.251410
             },
             zoom: 12
         };
@@ -21,43 +21,16 @@ class ContactUs extends React.Component {
             <>
                 <Header />
                 <div className="page-content">
-                <Banner title="Putting a plan to action, to assure your satisfaction!" pagename="Contact Us" bgimage={bnrimg}/>
-                   
+                    <Banner title="Бид эх орныхоо дөрвөн зүгт хөгжлийг бүтээлцэнэ" pagename="Contact Us" bgimage={bnrimg} />
+
                     {/* SECTION CONTENTG START */}
                     <div className="section-full p-tb80 inner-page-padding">
                         {/* LOCATION BLOCK*/}
                         <div className="container">
-                            {/* GOOGLE MAP & CONTACT FORM */}
                             <div className="section-content">
-                                {/* CONTACT FORM*/}
                                 <div className="row">
                                     <div className="col-md-8 col-sm-6">
-                                        <form className="contact-form cons-contact-form" method="post" action="form-handler.php">
-                                            <div className="contact-one m-b30">
-                                                {/* TITLE START */}
-                                                <div className="section-head">
-                                                    <div className="mt-separator-outer separator-left">
-                                                        <div className="mt-separator">
-                                                            <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Get</span> In touch</h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                {/* TITLE END */}
-                                                <div className="form-group">
-                                                    <input name="username" type="text" required className="form-control" placeholder="Name" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <input name="email" type="text" className="form-control" required placeholder="Email" />
-                                                </div>
-                                                <div className="form-group">
-                                                    <textarea name="message" rows={4} className="form-control " required placeholder="Message" defaultValue={""} />
-                                                </div>
-                                                <div className="text-right">
-                                                    <button name="submit" type="submit" value="Submit" className="site-button btn-effect">submit
-                  </button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5655.387269435258!2d106.7569661827266!3d47.82005905157946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96eb0cdb00ed47%3A0x41eb651c2ee21791!2sNEWS%20Remicon%20LLC!5e1!3m2!1sen!2smn!4v1750025402593!5m2!1sen!2smn" width="100%" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                                     </div>
                                     <div className="col-md-4 col-sm-6">
                                         <div className="contact-info m-b30">
@@ -71,45 +44,30 @@ class ContactUs extends React.Component {
                                             </div>
                                             {/* TITLE END */}
                                             <div className="bg-dark p-a20 text-white">
-                                                <div className="mt-icon-box-wraper left p-b40">
+                                                <div className="mt-icon-box-wraper left p-b40" style={{minHeight:"auto"}}>
                                                     <div className="icon-xs"><i className="fa fa-phone" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Phone number</h5>
-                                                        <p>(123) 456-78910</p>
+                                                        <p>(+976) 9105-5595</p>
                                                     </div>
                                                 </div>
-                                                <div className="mt-icon-box-wraper left p-b40">
+                                                <div className="mt-icon-box-wraper left p-b40" style={{minHeight:"auto"}}>
                                                     <div className="icon-xs"><i className="fa fa-envelope" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Email address</h5>
-                                                        <p>7xthemehelp@gmail.com</p>
+                                                        <p>newsremicon@gmail.com</p>
                                                     </div>
                                                 </div>
-                                                <div className="mt-icon-box-wraper left">
+                                                <div className="mt-icon-box-wraper left" style={{minHeight:"auto"}}>
                                                     <div className="icon-xs"><i className="fa fa-map-marker" /></div>
                                                     <div className="icon-content">
                                                         <h5 className="m-t0 font-weight-500">Address info</h5>
-                                                        <p>09, Martin Street B190 Polo Alto, San Francisco</p>
+                                                        <p>Хан-Уул дүүрэг, 21-р хороо, Өлзийтийн зам, 951-1 тоот</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="gmap-outline">
-                                <div style={{ height: '400px', width: '100%' }}>
-                                    <GoogleMapReact
-                                        bootstrapURLKeys={{ key: "AIzaSyAfY1DRbspf6E3jYUso-PeI_tdfRXA59i0" }}
-                                        defaultCenter={defaultProps.center}
-                                        defaultZoom={defaultProps.zoom}
-                                    >
-                                        <AnyReactComponent
-                                        lat={34.073280}
-                                        lng={-118.251410}
-                                        text={<i className="fa fa-map-marker" />}
-                                        />
-                                    </GoogleMapReact>
                                 </div>
                             </div>
                         </div>

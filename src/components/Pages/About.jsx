@@ -8,7 +8,7 @@ import Team3 from './../Elements/Team3';
 import AboutSummary from './../Elements/AboutSummary';
 
 // import bnrimg from '../../images/banner/1.jpg';
-import bnrimg from '../../../Data/bgr.jpg'
+import bnrimg from '../../../Data/bgr.jpeg'
 
 class About extends React.Component {
     render() {

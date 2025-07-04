@@ -92,8 +92,8 @@ import machine6 from "../../../Data/tools/machine/machine6.jpg";
 const machines = [
   {
     title:
-      "Машин техникийн хувьд нийт өөрийн гэсэн 20 миксер машинтай.Үүнд:  БНХАУ-д үйлдвэрлэсэн foton маркын 7м3-ын-5ш,БНСУ-д үйлдвэрлэсэн Deawoo  маркын 6м3-ын 12ш,hyuandai маркын 7м3-ын 3ш гэсэн миксер машинуудтай. Шаардлагатай үед түрээслэх гэрээний 10-15миксер машинуудтай",
-    img: [machine1, machine2],
+      "Машин техникийн хувьд нийт өөрийн гэсэн 20 миксер машинтай. Үүнд:  БНХАУ-д үйлдвэрлэсэн foton маркын 7м3-ын-5ш,БНСУ-д үйлдвэрлэсэн Deawoo  маркын 6м3-ын 12ш,hyuandai маркын 7м3-ын 3ш гэсэн миксер машинуудтай. Шаардлагатай үед түрээслэх гэрээний 10-15миксер машинуудтай",
+    img: [machine1],
   },
   {
     title:
@@ -108,7 +108,7 @@ const machines = [
   {
     title:
       "БНХАУ-д  үйлдвэрлэсэн  XGM үйлдвэрийн 3м3-ын багтаамжтай 2ш ковш машинтай. ",
-    img: [machine5, machine6],
+    img: [machine5],
   },
 ];
 
@@ -263,17 +263,17 @@ const Tools = () => {
                   </div>
                 </div>
               </div>
-              <div className="row col ml-10 mr-5">
+              <div className="row ml-3 mr-3">
                 {machines.map((machine, index) => (
                   <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                    <div className="border border-dark rounded h-100 text-center">
+                    <div className="d-flex flex-column h-[400px] border border-dark rounded text-center" style={{ height: "400px" }}>
                       <img
                         src={machine.img}
                         alt="machine-img"
                         className="img-fluid"
-                        style={{ objectFit: "cover" }}
+                        style={{ height: "200px", width: "100%", objectFit: "cover" }}
                       />
-                      <div className="p-3">
+                      <div className="p-3 mt-auto">
                         <p className="text-black">{machine.title}</p>
                       </div>
                     </div>
@@ -289,22 +289,57 @@ const Tools = () => {
                 <div className="mt-separator">
                   <h2 className="text-uppercase sep-line-one ">
                     <span className="font-weight-300 text-primary">
-                      Манай{" "}
+                      Хольц{" "}
                     </span>
-                    үйлдвэр
                   </h2>
                 </div>
               </div>
             </div>
-            <div className="row col ml-10 mr-5">
-              {ingredients.map((ingredient, index) => (
-                <div className="col-lg-4 col-md-6 mb-4" key={index}>
-                  <div className="border border-dark rounded h-100 text-center p-3 d-flex flex-column justify-content-center align-items-center">
-                    <p className="text-black font-weight-300 text-uppercase">{ingredient.title}</p>
-                    <p className="text-black">{ingredient.description}</p>
-                  </div>
+            <div className="mt-tabs vertical bg-tabs" style={{ maxWidth: "100%", overflowX: "auto" }}>
+              <ul className="nav nav-tabs">
+                <li className="active">
+                  <a data-toggle="tab" href="#cement">Цемент</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#sand">Элс 0.5</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#gravel">Хайрга 10*20</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#additive">Нэмэлт</a>
+                </li>
+                <li>
+                  <a data-toggle="tab" href="#water">Ус</a>
+                </li>
+              </ul>
+              <div className="tab-content">
+                <div id="cement" className="tab-pane active">
+                  <p className="m-b0">
+                    Бид цементийг Монгол улсын MNS974:2008 стандартад нийцсэн Мон полимент, Мак цемент, Хөтөл цементийг хэрэглэдэг.
+                  </p>
                 </div>
-              ))}
+                <div id="sand" className="tab-pane">
+                  <p className="m-b0">
+                    Зуны цагт MNS2803:2004, MNS392:2014 стандартад нийцүүлж угаасан 0,5, хавар намрын цагт стандартад нийцүүлж аль болох цэвэрхэн шаваргүй 0,5 ашиглаж байна.Улаанбаатартай ойрхон Элит 3 багана, Хан дээж, ЭБСО, Тэргүүн тээвэр, Итгэл түшиг, Бөхөг түргэн гэсэн тусгай зөвшөөрөлтэй карьеруудаас 0,5 татдаг.
+                  </p>
+                </div>
+                <div id="gravel" className="tab-pane">
+                  <p className="m-b0">
+                    Уулын дайргыг түлхүү бетондоо хэрэглэдэг. Энэ нь монгол улсын MNS2803:2004, MNS390,1998, MNS346:2000 стандартыг хангасан байдаг.Бид Цээ цээ импекс, Мандах булаг, Тэгш плант гэсэн карьеруудаас 10-20 дайрга хэрэглэдэг.
+                  </p>
+                </div>
+                <div id="additive" className="tab-pane">
+                  <p className="m-b0">
+                    Бетон зуурмагийн нэмэлт бодис нь маш чухал бөгөөд EZCON, бэст эргэл, өнөд дэвжих, сезон, chemi star гэсэн солонгос болон хятад нэмэлтүүдийг авч хэрэглэдэг. Энэ нь MNS ASTM C494/C 494M:2010 стандартыг хангасан байдаг.
+                  </p>
+                </div>
+                <div id="water" className="tab-pane">
+                  <p className="m-b0">
+                    Бид өөрсдийн гүний худгаас авч бетонд хэрэглэдэг. Энэ нь MNS3821:85, MNS ISO12439:2012 стандартыг хангасан ундны цэвэр ус юм.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

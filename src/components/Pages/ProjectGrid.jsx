@@ -1,170 +1,90 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Header from './../Common/Header';
 import Footer from './../Common/Footer';
 import Banner from './../Elements/Banner';
 
 import bnrimg from '../../images/banner/2.jpg';
-import pic1 from '../../images/projects/portrait/pic1.jpg';
-import pic2 from '../../images/projects/portrait/pic2.jpg';
-import pic3 from '../../images/projects/portrait/pic3.jpg';
-import pic4 from '../../images/projects/portrait/pic4.jpg';
-import pic5 from '../../images/projects/portrait/pic5.jpg';
-import pic6 from '../../images/projects/portrait/pic6.jpg';
-import pic7 from '../../images/projects/portrait/pic7.jpg';
-import pic8 from '../../images/projects/portrait/pic8.jpg';
-import pic9 from '../../images/projects/portrait/pic9.jpg';
 
-const filters = [
-    { label: "Construction", filter: ".cat-1" },
-    { label: "Renovation", filter: ".cat-2" },
-    { label: "Outdoor", filter: ".cat-3" },
-    { label: "Interiors", filter: ".cat-4" },
-    { label: "Consulting", filter: ".cat-5" },
-    
-];
+import project1 from '../../images/projects/project1.jpg';
+import project2 from '../../images/projects/project2.jpg';
+import project3 from '../../images/projects/project3.jpg';
+import project4 from '../../images/projects/project4.jpg';
+import project5 from '../../images/projects/project5.jpg';
+import project6 from '../../images/projects/project6.jpg';
+import project7 from '../../images/projects/project7.jpg';
+import project8 from '../../images/projects/project8.jpg';
+import project9 from '../../images/projects/project9.jpg';
+import project10 from '../../images/projects/project10.jpg';
+import project11 from '../../images/projects/project11.jpg';
+import project12 from '../../images/projects/project12.jpg';
+import project13 from '../../images/projects/project13.jpg';
+import project14 from '../../images/projects/project14.jpg';
+import project15 from '../../images/projects/project15.jpg';
+import project16 from '../../images/projects/project16.jpg';
+import project17 from '../../images/projects/project17.jpg';
+import project18 from '../../images/projects/project18.jpg';
+import project19 from '../../images/projects/project19.jpg';
+import project20 from '../../images/projects/project20.jpg';
+import project21 from '../../images/projects/project21.jpg';
+import project22 from '../../images/projects/project22.jpg';
 
 const projects = [
-    {
-        thumb: pic1,
-        image: pic4,
-        title: 'Life style building',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-1'
-    },
-    {
-        thumb: pic2,
-        image: pic9,
-        title: 'Central City Building',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-2'
-    },
-    {
-        thumb: pic3,
-        image: pic6,
-        title: 'Nathan Brooke House',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-3'
-    },
-    {
-        thumb: pic4,
-        image: pic5,
-        title: 'Metropolitan Museum',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-4'
-    },
-    {
-        thumb: pic5,
-        image: pic7,
-        title: 'Art Family Residence',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-5'
-    },
-    {
-        thumb: pic6,
-        image: pic8,
-        title: 'Office Partition Walls',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-4'
-    },
-    {
-        thumb: pic7,
-        image: pic6,
-        title: 'Glass Office Screen',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-3'
-    },
-    {
-        thumb: pic8,
-        image: pic1,
-        title: 'State Hermitage Museum',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-2'
-    },
-    {
-        thumb: pic9,
-        image: pic5,
-        title: 'Central Florida University',
-        description: `We are so busy watching out for what's just ahead of us that we don't take the time to enjoy where we are.`,
-        filter: 'cat-1'
-    }
-]
+    { image: project1, title: 'Хурд Групп ХХК Рапид хороолол' },
+    { image: project2, title: 'Хурд Групп ХХК Нарны хороолол' },
+    { image: project3, title: 'Хурд Групп ХХК Хүннү хороолол' },
+    { image: project4, title: 'Хурд Групп ХХК KH хотхон' },
+    { image: project5, title: 'Хурд Групп ХХК Энхтайван хотхон' },
+    { image: project6, title: 'Хурд Групп ХХК Академи хотхон' },
+    { image: project7, title: 'Хурд Групп ХХК Хаан банк тауэр, Наадам центр' },
+    { image: project8, title: 'Могул Ибиз ХХК Хан Хиллс хороолол' },
+    { image: project9, title: 'MCS  ХХК Будда виста' },
+    { image: project10, title: 'Сүмбэр Цамхаг ХХК Их Засаг Их сургууль' },
+    { image: project11, title: 'Эн Би Би Ди ХХК Баялаг Ундраа худалдааны төв' },
+    { image: project12, title: 'ТОСК Буянт ухаа1 хороолол' },
+    { image: project13, title: 'Вайт Финикс ХХК Есөн Эрдэнэ хороолол' },
+    { image: project14, title: 'Нарантуул ХХК SS Garden  хотхон' },
+    { image: project15, title: 'Пума ХХК Tuul view хотхон' },
+    { image: project16, title: 'Цоба Интернэшнл ХХК Хадат Вилла 1,2 төсөл' },
+    { image: project17, title: 'Эйжн Ложистик ХХК Жаргалант Гарден хаус хороолол' },
+    { image: project18, title: 'Тайж Групп ХХК Тайж Ресорт зочид буудал' },
+    { image: project19, title: 'ТОСК Гранд Буба ХХК Солонго хороолол' },
+    { image: project20, title: 'Хурд Пропертийз ХХК Нисэх Гарден хороолол' },
+    { image: project21, title: 'Си Өү Эл Си ХХК Дорноговь нүүрс коксжуулах үйлдвэр' }, // switched
+    { image: project22, title: 'Жигүүр Гранд ХХК Булган аймаг Баатарван амралтын өргөтгөл' } // switched
+];
 
-class ProjectGrid extends React.Component {
-    
-    componentDidMount() {
-        function loadScript(src) {
 
-            return new Promise(function (resolve, reject) {
-                var script = document.createElement('script');
-                script.src = src;
-                script.addEventListener('load', function () {
-                    resolve();
-                });
-                script.addEventListener('error', function (e) {
-                    reject(e);
-                });
-                document.body.appendChild(script);
-                document.body.removeChild(script);
-            })
-        };
-
-        loadScript('./assets/js/masonary.js');
-
-    };
-    
-    render() {
-        return (
-            <>
-                <Header />
-                <div className="page-content">
-                <Banner title="Always dedicated and devoted" pagename="Project Grid" bgimage={bnrimg}/>
-                    
-                    {/* SECTION CONTENT START */}
-                    <div className="section-full p-tb80 inner-page-padding">
-                        <div className="container">
-                            {/* PAGINATION START */}
-                            <div className="filter-wrap p-b30 text-center">
-                                <ul className="filter-navigation inline-navigation masonry-filter link-style  text-uppercase">
-                                    <li className="active"><NavLink to={"#"} data-filter="*" data-hover="All">All</NavLink></li>
-                                    {filters.map((item, index) => (
-                                    <li key={index}><NavLink to={"#"} data-filter={item.filter} data-hover={item.label}>{item.label}</NavLink></li>
-                                    ))} 
-                                </ul>
-                            </div>
-                            {/* PAGINATION END */}
-                            {/* GALLERY CONTENT START */}
-                            <div className="portfolio-wrap mfp-gallery work-grid row clearfix">
-                                {projects.map((item, index) => (
-                                    <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
-                                        <div className="image-effect-two hover-shadow">
-                                            <img src={item.thumb} alt="" />
-                                            <div className="figcaption">
-                                                <h4 className="mt-tilte">{item.title}</h4>
-                                                <p>{item.description}</p>
-                                                <NavLink to="/project-detail" className="read-more site-button btn-effect">Read More</NavLink>
-                                                <a className="mfp-link" href={item.image}>
-                                                    <i className="fa fa-arrows-alt" />
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                                
-                            </div>
-                            {/* GALLERY CONTENT END */}
-                            <div className="m-t50 text-center">
-                                <NavLink to={"#"} className="site-button btn-effect">Load More</NavLink>
-                            </div>
-                        </div>
+const ProjectGrid = () => {
+  return (
+    <div className="flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        <Banner title="Бидний гүйцэтгэсэн ажлууд" pagename="Projects" bgimage={bnrimg} />
+        <div className="section-full pt-20 pb-20 inner-page-padding">
+          <div className="container">
+            <div className="portfolio-wrap row clearfix">
+              {projects.map((item, index) => (
+                <div key={index} className="col-md-4 col-sm-6 m-b30">
+                  <div className="image-effect-two hover-shadow">
+                    <img
+                      src={item.image}
+                      alt={`Project ${index + 1}`}
+                      className="w-full"
+                      style={{ height: '200px', objectFit: 'cover' }}
+                    />
+                    <div className="figcaption">
+                      <h4 className="mt-tilte">{item.title}</h4>
                     </div>
-                    {/* SECTION CONTENT END  */}
+                  </div>
                 </div>
-
-                <Footer />
-            </>
-        );
-    };
+              ))}
+            </div>
+          </div>
+        </div>
+      </main>
+      <Footer /> {/* Should now stick to the bottom */}
+    </div>
+  );
 };
 
 export default ProjectGrid;

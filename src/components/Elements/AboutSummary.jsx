@@ -1,67 +1,96 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 import img1 from '../../images/background/bg-6.png';
-import img2 from '../../images/background/line.png'; // Background for text blocks
+import img2 from '../../images/background/line.png'; 
 
-// Placeholder images - replace with your actual project images and paths
-
-import test_img from '../../../Data/test.jpg'
-import test_img_b from '../../../Data/ajil1.jpg'; // Example: if your second image is test_b.jpg
+import project_2018_1 from '../../../Data/Projects/2018-1.jpg'
+import project_2018_2 from '../../../Data/Projects/2018-2.jpg'
+import project_2018_3 from '../../../Data/Projects/2018-3.jpg'
+import project_2018_4 from '../../../Data/Projects/2018-4.jpg'
+import project_2018_5 from '../../../Data/Projects/2018-5.jpg'
+import project_2018_6 from '../../../Data/Projects/2018-6.jpg'
+import project_2017_1 from '../../../Data/Projects/2017-1.jpg'
+import project_2017_2 from '../../../Data/Projects/2017-2.jpg'
+import project_2016_1 from '../../../Data/Projects/2016-1.jpg';
+import project_2016_2 from '../../../Data/Projects/2016-2.jpg';
+import project_2015_1 from '../../../Data/Projects/2015-1.jpg';
+import project_2015_2 from '../../../Data/Projects/2015-2.jpg';
+import project_2014_1 from '../../../Data/Projects/2014-1.jpg';
+import project_2014_2 from '../../../Data/Projects/2014-2.jpg';
+import project_2013_1 from '../../../Data/Projects/2013-1.jpg';
+import project_2013_2 from '../../../Data/Projects/2013-2.jpg';
+import project_2012_1 from '../../../Data/Projects/2012-1.jpg';
+import project_2012_2 from '../../../Data/Projects/2012-2.jpg';
 
 const projectsData = [
   {
     id: 1,
-    year: "2022 он",
-    description: "2012онд М100-М500 маркын бетон зуурмагийг нийт- 50100м3 үйлдвэрлэсэн. Хамтарч ажилласан  төслүүд Хурд групп –Нарны хороолол, KH аппартмент,Рапид харш, MCS групп- Будда виста цогцолбор.",
-    imageUrls: [test_img, test_img_b], // Array for multiple images
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Corresponding alt texts
+    year: "2018 он",
+    description: "2018 онд Өмнөговь аймагийн Ханбогд сумын Оюу толгойн уурхайн дэд станц барих бетон зуурмагийн ажлыг хийж гүйцэтгэсэн.Нийт-1000м3 бетоныг М150,М200,М350 гэсэн маркаар амжилттай хийж дуусгасан.",
+    imageUrls: [project_2018_1, project_2018_2],
+    altTexts: ["2018 оны ажлын зураг 1", "2018 оны ажлын зураг 2"]
   },
   {
     id: 2,
-    year: "2021-2022",
-    description: "Constructed a luxury residential tower, combining aesthetic appeal with functional living spaces. Our team ensured timely completion and adherence to the highest quality standards.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2018 он",
+    description: "2018 онд Дорноговь аймагийн Хөвсгөл сумын Айл баян уурхайн нүүрс угаах үйлдвэрийн бүх бетон зуурмагийн ажлыг хийж гүйцэтгэсэн.Тус уурхайн М150,М250,М350,М400,М550 гэсэн маркаар Нийт-5000м3 бетон цутгалтын ажлыг амжилттай хийж гүйцэтгэсэн.",
+    imageUrls: [project_2018_3, project_2018_4],
+    altTexts: ["2018 оны ажлын зураг 3", "2018 оны ажлын зураг 4"]
   },
   {
     id: 3,
-    year: "2020-2021",
-    description: "Developed a multi-functional sports center for the community, featuring modern amenities and eco-friendly construction practices. A hub for local sports and recreation.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2018 он",
+    description: "2018 онд нийт-30000м3 бетон зуурмагийг үйлдвэрлэж Эн биби ди-SS Garden. Хүннү вилла, Могул ибиз- Хан хиллс хороолол, Само мах-Жаргалант ресорт ,Их майдар,Ангаахын сургуулийн барилга гэх мэт төслүүдтэй хамтарч ажилласан.",
+    imageUrls: [project_2018_5, project_2018_6],
+    altTexts: ["2018 оны ажлын зураг 5", "2018 оны ажлын зураг 6"]
   },
   {
     id: 4,
-    year: "2019-2020",
-    description: "Successfully delivered a state-of-the-art commercial complex, focusing on sustainable design and advanced engineering solutions. This project set new benchmarks in urban development.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2017 он",
+    description: "2017 онд нийт-33400м3 бетон үйлдвэрлэж Хурд групп-Нарны хороолол 5-р ээлж,Аккадеми хотхон,наадам центр.Само мах- Жаргалант ресорт.Бүргэд констракшн-Оффиссын барилга гэх төслүүдтэй хам тарч ажилласан.",
+    imageUrls: [project_2017_1, project_2017_2],
+    altTexts: ["2017 оны ажлын зураг 1", "2017 оны ажлын зураг 2"]
   },
   {
     id: 5,
-    year: "2018-2019",
-    description: "Successfully delivered a state-of-the-art commercial complex, focusing on sustainable design and advanced engineering solutions. This project set new benchmarks in urban development.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2016 он",
+    description: "2016 онд нийт-48000м3 бетон зуурмаг үйлдвэрлэсэн. Хамтарч ажилласан төслүүд бол Хурд-Нарны хороолол 4-р ээлж,Энх тайван хороолол.Эн би би ди-SS Garden",
+    imageUrls: [project_2016_1, project_2016_2],
+    altTexts: ["2016 оны ажлын зураг 1", "2016 оны ажлын зураг 2"]
   },
   {
     id: 6,
-    year: "2017-2018",
-    description: "Successfully delivered a state-of-the-art commercial complex, focusing on sustainable design and advanced engineering solutions. This project set new benchmarks in urban development.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2015 он",
+    description: "2015 онд нийт-47904м3 бетон үйлвэрлэж, Хурд групп-нарны хороолол-3-р ээлж, Хаан таур, Энхтайван хороолол. Камдер-Encanto town. Эн би би ди-Есөн эрдэнэ хотхон, Баялаг ундраа төв гэх томоохон төслүүдтэй хам тарч ажилласан.",
+    imageUrls: [project_2015_1, project_2015_2],
+    altTexts: ["2015 оны ажлын зураг 1", "2015 оны ажлын зураг 2"]
   },
   {
     id: 7,
-    year: "2016-2017",
-    description: "Successfully delivered a state-of-the-art commercial complex, focusing on sustainable design and advanced engineering solutions. This project set new benchmarks in urban development.",
-    imageUrls: [test_img, test_img_b], // Replace with your actual imported image variable for this project
-    altTexts: ["2022 оны ажлын зураг 1", "2022 оны ажлын зураг 2"] // Replace with your actual imported image variable for this project
+    year: "2014 он",
+    description: "2014 онд нийт-68286м3 бетон үйлвэрлэж, Хурд групп-нарны хороолол 2-р ээлж, Хүннү хороолол,Могул ибиз-Хан хиллс,9 эрдэнэ хотхон,Камдер-Encanto town,Буянт-Ухаа 2 хороололуудын бетон зуурмагийг цутгасан.",
+    imageUrls: [project_2014_1, project_2014_2],
+    altTexts: ["2014 оны ажлын зураг 1", "2014 оны ажлын зураг 2"]
   },
+  {
+    id: 8,
+    year: "2013 он",
+    description: "2013 онд нийт-51662м3 бетон зуурмаг үйлдвэрлэж Хурд групп-Нарны хороолол,Хүннү хороолол.Буянт Ухаа1 хороолол. Могул ибиз -Хан хиллс хороолол гэх мэт төслүүдийн бетон зуурмагийн ажлыг хийж гүйцэтгэсэн.",
+    imageUrls: [project_2013_1, project_2013_2],
+    altTexts: ["2013 оны ажлын зураг 1", "2013 оны ажлын зураг 2"]
+  },
+  {
+    id: 9,
+    year: "2012 он",
+    description: " 2012 онд М100-М500 маркын бетон зуурмагийг нийт- 50100м3 үйлдвэрлэсэн. Хамтарч ажилласан  төслүүд Хурд групп –Нарны хороолол, KH аппартмент,Рапид харш, MCS групп- Будда виста цогцолбор.",
+    imageUrls: [project_2012_1, project_2012_2],
+    altTexts: ["2012 оны ажлын зураг 1", "2012 оны ажлын зураг 2"]
+  }
 ];
 
+
 // Select a few projects to feature on this summary component
-const featuredProjects = projectsData.slice(0, 4); // Displaying the first 2 projects
+const featuredProjects = projectsData.slice(0, 9); // Displaying the first 2 projects
 
 class AboutSummary extends React.Component {
   constructor(props) {
@@ -181,7 +210,7 @@ class AboutSummary extends React.Component {
             {/* View All Projects Button */}
             <div className="row">
               <div className="col-md-12 text-center p-t30">
-                <Link to="/projects" className="site-button site-button-effect">
+                <Link to="/project-grid" className="site-button site-button-effect">
                   Бүх ажлуудыг харах
                 </Link>
                 {/* Ensure you have a route set up for "/projects" if using React Router */}

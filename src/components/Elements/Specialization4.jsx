@@ -1,37 +1,38 @@
 import React from 'react';  
 import { NavLink } from 'react-router-dom';
-import crane1 from './../../images/icon/crane-1.png';
-import renovation from './../../images/icon/renovation.png';
-import toolbox from './../../images/icon/toolbox.png';
 import compass from './../../images/icon/compass.png';
+import calculations from './../../images/icon/calculations.png'
+import trowel from './../../images/icon/trowel.png'
+import worker from './../../images/icon/engineer.png'
 const services = [
     {
         count: 1,
-        title: `Building Construction`,
-        icon: crane1,
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        title: `Зуурмаг`,
+        icon: trowel,
+        description: 'Хэрэглэгчдийн хүсэлтийн дагуу бид зуурмагийн хольц, нягтаршил, даац зэргийг тохируулж үйлдвэрлэнэ.',
     },
     {
         count: 2,
-        title: 'Building Renovation',
-        icon: renovation,
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        title: 'Нарийвчлал, чанар',
+        icon: calculations,
+        description: 'Захиалганд гарсан зуурмаг бүр нарийвчлалтайгаар үйлдвэрлэгдэн, чанарын хяналтаар ордог.',
     },
     {
         count: 3,
-        title: 'Building Maintenance',
-        icon: toolbox,
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        title: 'Хамт олон',
+        icon: worker,
+        description: 'Энэхүү зах зээлд олон жил өрсөлдөж буй мэргэшсэн хамт олон.',
     },
     {
         count: 4,
-        title: 'Architecture Design',
+        title: 'Логистикс',
         icon: compass,
-        description: 'lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident.',
+        description: 'Түүхий эд болон миксерүүд түргэн шуурхай ажилд гарахад үргэлж бэлэн.',
     }
 ]
 
 import img1 from '../../../Data/bugd.jpg';
+import { tr } from 'framer-motion/client';
 
 class Specialization4 extends React.Component {
     render() {
@@ -43,7 +44,7 @@ class Specialization4 extends React.Component {
                         <div className="section-head">
                             <div className="mt-separator-outer separator-left">
                                 <div className="mt-separator">
-                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Our</span> Speciallization</h2>
+                                    <h2 className="text-uppercase sep-line-one "><span className="font-weight-300 text-primary">Бидний</span> Мэргэшил</h2>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +63,7 @@ class Specialization4 extends React.Component {
                                                     <div className="icon-content">
                                                         <h4 className="mt-tilte m-b25">{item.title}</h4>
                                                         <p>{item.description}</p>
-                                                        <NavLink to={"/services"} className="site-button-link" data-hover="Read More">Read More <i className="fa fa-angle-right arrow-animation" /></NavLink>
+                                                        <NavLink to={"/services"} className="site-button-link" data-hover="Read More">Дэлгэрэнгүй <i className="fa fa-angle-right arrow-animation" /></NavLink>
                                                     </div>
                                                 </div>
                                             </div>

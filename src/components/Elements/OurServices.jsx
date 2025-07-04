@@ -1,25 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import img1 from "../../../Data/trucks/truck1.png";
-import img2 from "../../../Data/trucks/truck2.png";
 import img3 from "../../../Data/trucks/truck3.png";
-import img4 from "../../../Data/trucks/truck4.png";
-import img5 from "../../../Data/trucks/truck5.png";
-import img6 from "../../../Data/trucks/truck6.png";
 import backPic from "../../images/background/bg-6.png";
 
 const services = [
   {
     count: 1,
     title: `B10 М150 `,
-    icon: img1,
+    icon: img3,
     description:
       "Уг марктай бетон нь 1см2 талбайд 150кг даах даац бүхий бетон юм. Зориулалт нь: Бэлтгэл ул, дээврийн тэгшилэгээ, боржур хашааны ул бетонд ашиглана.",
   },
   {
     count: 2,
     title: "B-15 М200",
-    icon: img2,
+    icon: img3,
     description:
       "Уг марктай бетон нь 1см2 талбайд 200кг даах даац бүхий бетон юм. Зориулалт нь: 1 давхар байшингийн бүрэн цутгалт, гадна талбайд ашиглана.",
   },
@@ -33,35 +28,35 @@ const services = [
   {
     count: 4,
     title: "B25 М350",
-    icon: img4,
+    icon: img3,
     description:
       "Уг марктай бетон нь 1см2 талбайд 300кг даах даац бүхий бетон юм. Зориулалт нь: 9 давхар барилгын бүх хийцүүд, суурь суурийн бетонд ашиглана.",
   },
   {
     count: 5,
     title: "B30 М400",
-    icon: img5,
+    icon: img3,
     description:
       "Уг марктай бетон нь 1см2 талбайд 400кг даах даац бүхий бетон юм. Зориулалт нь: Өндөр барилга, суурь бүх хийц эдлэл ашиглана.",
   },
   {
     count: 6,
     title: "Бетон зуурмаг М450-М600",
-    icon: img6,
+    icon: img3,
     description:
       "Уг Энэ маркын бетонуудыг өндөр барилга байгууламж гүүр болон үйлдвэрийн дам нуруу багана, төмөр бетон сууринд ашигладаг.",
   },
   {
     count: 7,
     title: "Ус үл нэвтрүүлэх бетон зуурмаг",
-    icon: img6,
+    icon: img3,
     description:
       "Энэ төрлийн бетон нь ус нэвтрүүлэхгүй байх зориулалттай тусгай төрлийн бетон бөгөөд чийг усны даралтанд өртдөг барилга байгууламжинд ашиглагддаг. Тухайлбал: Суурь, хонгил усны сав, усан бассейн, далан, дээврийн давцан г.м",
   },
   {
     count: 8,
     title: "Бетон зуурмаг М650-М700",
-    icon: img6,
+    icon: img3,
     description: "Энэ маркын бетон нь 1см2 талбайд 700кг даах даац бүхий бетон юм. Зориулалт нь: Өндөр барилга, суурь бүх хийц эдлэл ашиглана.",
   }
 ];
@@ -138,9 +133,6 @@ class OurServices extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="hilite-title text-left p-l50 text-uppercase text-pop-up-top">
-            <strong>Services</strong>
           </div>
         </div>
       </>

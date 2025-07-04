@@ -64,7 +64,7 @@ class Header extends React.Component {
                                     </ul>
                                 </div>
                                 <div className="mt-topbar-right clearfix">
-                                    <div className="appint-btn"><NavLink to={"#"} className="site-button">Холбоо барих</NavLink></div>
+                                    <div className="appint-btn"><NavLink to={"/contactus"} className="site-button">Холбоо барих</NavLink></div>
                                 </div>
                             </div>
                         </div>
@@ -74,8 +74,8 @@ class Header extends React.Component {
                             <div className="container">
                                 <div className="logo-header">
                                     <div className="logo-header-inner logo-header-one">
-                                        <NavLink to={"./"}>
-                                            <img src={logo} style={{ width: '90px', height: '80px' }} alt="logo" />
+                                        <NavLink to={"/"}>
+                                            <img src={logo} style={{ width: '90px', height: '80px' }} alt="logo" className='cursor-pointer'/>
                                         </NavLink>
                                     </div>
                                 </div>
@@ -86,17 +86,7 @@ class Header extends React.Component {
                                     <span className="icon-bar" />
                                     <span className="icon-bar" />
                                 </button>
-                                {/* ETRA Nav */}
-                                <div className="extra-nav">
-                                    <div className="extra-cell">
-                                        <NavLink to={"#"} onClick={this.handleSearchToggle}> 
-                                            <i className="fa fa-search" />
-                                        </NavLink>
-                                    </div>
-                                    <div className="extra-cell">
-                                        <NavLink to={"#"} className="contact-slide-show" onClick={this.handleQuoteToggle}><i className="fa fa-angle-left arrow-animation" /></NavLink>
-                                    </div>
-                                </div>
+
                                 {/* ETRA Nav */}
                                 {/* Contact Nav */}
                                 <div className="contact-slide-hide " style={{ backgroundImage: 'url(' + bnr + ')', right: isQuoteActive ? '0px' : '-500px' }}>

@@ -23,7 +23,7 @@ class Error extends React.Component {
                                     <strong>Page Not Found</strong>
                                     <span className="title">404</span>
                                     <p>The webpage you are looking for is not here!</p>
-                                    <NavLink to="/homepage2" title="Back to home" className="site-button btn-effect">Back to home</NavLink>
+                                    <NavLink to="/" title="Back to home" className="site-button btn-effect">Back to home</NavLink>
                                 </div>
                             </div>
                         </div>

@@ -1,0 +1,9 @@
+/*===================================== 
+YOU CAN WRIGHT CUSTOME CSS 
+======================================*/
+.primary{
+    background-color: #0000FF;
+}
+.text-primary{
+    color: #0000FF !important;
+}

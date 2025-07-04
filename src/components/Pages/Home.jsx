@@ -13,7 +13,7 @@ class Home extends React.Component {
                 <Header />
                 <div className="page-content">
                     <Slider />
-                    <div className="section-full p-tb30">
+                    <div className="section-full p-b30">
                         <About/>
                     </div>
                     <div className="section-full p-tb5">
